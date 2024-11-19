@@ -35,5 +35,7 @@ for i in range(1, amount):
 
 Time complexity is $O(NC)$, where $N$ is the amount and $C$ is the number of coins. 
 
+Check out my soluton that I posted on LeetCode [here](https://leetcode.com/problems/coin-change/solutions/6008613/solution-for-nnhs-programming-club/).
+
 ## Conclusion
 Yeah that's pretty much it... dp is a relatively hard concept to grasp, but y'all chose it over graph theory so we'll just do an intro for this meeting. 
