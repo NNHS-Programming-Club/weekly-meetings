@@ -5,10 +5,10 @@
 The first thing that one should know in competitive programming is input and output. Specifically, reading and writing to files or to the console. In this lesson, we look at all the input/output for Python, Java, and C++.
 
 ## Python
-Python is the most straightforward and simplist. 
+Python is the most straightforward and simple. 
 
 ### Console
-No need to define any variable. Just use `input()` to get a line and `print()` to print something out to the console. Notice that if the values are seperated by spaces, then use can use `.split()` to split it into an list. We also need to use `int()` to convert string into integers
+No need to define any variable. Just use `input()` to get a line and `print()` to print something out to the console. Notice that if the values are separated by spaces, then you can use `.split()` to split it into an list. We also need to use `int()` to convert strings into integers
 
 ```python
 n = int(input())
@@ -16,7 +16,7 @@ arr = input().split()
 ```
 
 ### File
-We will need two variables, one for the input file and one for the output file. They can be defined like:
+We will need two variables, one for the input file and one for the output file. They can be defined as:
 
 ```python
 fin = open("input.txt", "r")
@@ -35,11 +35,11 @@ to print a line, we simply do
 fout.write("hi\n")
 ```
 
-Notice that if we want to print a new line at the end, we need to attatch a `"\n"` at the end. 
+Notice that if we want to print a new line at the end, we need to attach a `"\n"` at the end. 
 
 ## Java
 
-Java is the most complicated out of the three, so it is best to save it or make a template so that you don't have to type it out everytime 
+Java is the most complicated out of the three, so it is best to save it or make a template so that you don't have to type it out every time 
 
 ### Console
 
@@ -52,7 +52,7 @@ int N = Integer.parseInt(sc.nextLine());
 
 sc.close();
 ```
-`Integer.parseInt()` is a function that converts a string to integer. Don't forget to close the Scanner at the end of the program. 
+`Integer.parseInt()` is a function that converts a string to an integer. Don't forget to close the Scanner at the end of the program. 
 
 
 Here is a way using BufferedReader and PrintWriter, this looks more complicated, but they need to be used when doing input and output through a file. So it's good to learn them for console as well. 
@@ -103,7 +103,7 @@ for (int i = 0; i < N; i++) {
 cout << N << endl;
 ```
 
-Very simple. The direction of the arrows matter. The `endl` means new line. It's technically `std::endl` if there's no `using namespace std;` in the program. 
+Very simple. The direction of the arrows matters. The `endl` means new line. It's technically `std::endl` if there's no `using namespace std;` in the program. 
 
 Another thing is the C++ automatically seperates things by spaces, if the input is `2 3 4 2 3`, `cin` would read the integers one by one. There's also no need to convert it to an integer, because `cin` does that automatically when reading into an integer variable. This is why C++ is good for competitive programming. 
 
