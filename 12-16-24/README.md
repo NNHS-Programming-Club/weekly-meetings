@@ -7,10 +7,10 @@ The full problem is [here](https://usaco.org/index.php?page=viewproblem2&cpid=12
 Bessie the cow eats one haybale every day during dinner. There are `N` haybale deliveries that bessie will recieve on day $d_i$ with $b_i$ haybales. How many haybales will Bessie eat in `T` days?
 
 ### Constraints
-$1 <= N <= 10^5$
-$1 <= T <= 10^{14}$
-$1 <= d_i <= 10^{14}$
-$1 <= b_i <= 10^9$
+$1 <= N <= 10^5$ <br />
+$1 <= T <= 10^{14}$ <br />
+$1 <= d_i <= 10^{14}$ <br />
+$1 <= b_i <= 10^9$ <br />
 
 ## Solution 1 (Simulation)
 We can solve the problem using simulation by cycling through all the days and checking if we have haybales to eat on day `i`. We can keep track of the haybales by putting $b_i$ haybales on day $d_i$ in a dictionary. We make a variable called `hay` that keeps track of how many haybales we have. We can update `hay` in the loop accordingly. This gives a time complexity of $O(T)$. Check solution1.py for more information. 
