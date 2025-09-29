@@ -10,5 +10,8 @@ while x != secret :
         print("too high")
     if x < secret:
         print("too low")
+    rounds = rounds - 1
+    if rounds < 1:
+        print("you lost")
 
 print("you won!")
