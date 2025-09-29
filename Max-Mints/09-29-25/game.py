@@ -1,6 +1,5 @@
 import random
 
-
 randNum= random.randint(1,10)
 rounds= int(input("How many rounds?: "))
 guess= int(input("What number is your first guess?: "))
