@@ -16,17 +16,21 @@ while True:
 
         if abs(guess - value) >= 500:
             print("ur way off")
-        elif abs(guess - value) < 100:
+        elif abs(guess - value) < 100 and abs(guess - value) >= 50:
             print("ur kinda close")
-        elif abs(guess - value) < 50:
-            print("actually nvm ur close")
+        elif abs(guess - value) < 50 and abs(guess - value) > 10:
+            print("ur close")
+        elif abs(guess - value) <= 10:
+            print("ur very close")
 
     if guess > value:
         print("go lower")
 
         if abs(guess - value) >= 500:
             print("ur way off")
-        elif abs(guess - value) < 100:
+        elif abs(guess - value) < 100 and abs(guess - value) >= 50:
             print("ur kinda close")
         elif abs(guess - value) < 50:
-            print("actually nvm ur close")
+            print("ur close")
+        elif abs(guess - value) <= 10:
+            print("ur very close")
