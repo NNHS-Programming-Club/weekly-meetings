@@ -1,7 +1,6 @@
 import random
 
 maxNum = int(input("What should the maximum number be?: "))
-
 randNum= random.randint(1,maxNum)
 rounds= int(input("How many rounds?: "))
 guess= int(input("What number is your first guess?: "))
