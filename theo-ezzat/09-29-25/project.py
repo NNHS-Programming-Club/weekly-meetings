@@ -1,11 +1,13 @@
 import random
 secret =random.randint(1,10)
-guess = 0
+
 question = int(input("Guess my number"))
-while guess != secret :
+while True :
    
     if question == secret:
         print("You did it")
         break
     else:
+        print("Try again")
+        question = int(input("Guess my number"))
 
