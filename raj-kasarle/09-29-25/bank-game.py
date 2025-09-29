@@ -18,5 +18,5 @@ while tries < rounds:
     elif guess < secret:
         print("Higher.")
 
-print("The number was " + secret + ".")
-print("Turns used: " + tries)
+print("The number was " + str(secret) + ".")
+print("Turns used: " + str(tries))
