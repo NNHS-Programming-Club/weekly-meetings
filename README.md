@@ -1,4 +1,4 @@
 # Weekly Programming Club Meetings
-Contains all the code and problems we go over every meeting. There will be a README.md in every meeting folder. 
+WOOHOO, everyone's code is in this repo!!
 
 Star this repo if it helped you learn more about programming and algorithms. 
