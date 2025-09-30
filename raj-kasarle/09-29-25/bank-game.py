@@ -7,7 +7,7 @@ rounds = int(input("How many rounds?\n"))
 tries = 0
 
 while tries < rounds:
-    guess = int(input((str(rounds) + " rounds. Guess the number.\n")))
+    guess = int(input((str(rounds - tries) + " rounds. Guess the number.\n")))
     tries +=1
     if guess == secret:
         print("You got my number!")
