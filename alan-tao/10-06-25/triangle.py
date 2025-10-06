@@ -12,7 +12,7 @@ for i in range(rows):
 
 # 2
 for i in range(rows):
-    print(repeat("*", rows-i+1))
+    print(repeat("*", rows-i))
 
 
 # 3
