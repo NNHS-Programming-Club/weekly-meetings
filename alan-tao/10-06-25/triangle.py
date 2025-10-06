@@ -33,4 +33,4 @@ for i in range(rows):
 print("*")
 for i in range(rows-2):
     print("*" + repeat(" ", i) + "*")
-repeat("*", rows)
+print(repeat("*", rows))
