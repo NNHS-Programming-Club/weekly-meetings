@@ -33,7 +33,7 @@ print(output)
 
 #4
 
-for i in range (n):
+for i in range (1,n+1):
     output = ""
     for j in range(n-i):
         output += " "
