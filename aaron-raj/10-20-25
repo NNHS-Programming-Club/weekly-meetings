@@ -1,0 +1,17 @@
+Class Node:
+value = 0
+next = 0
+def  __init__ (self,value)
+self.value = value
+
+
+def makeLL(arr):
+    head = Node(arr[0])
+    head2 = Node(5)
+
+    previous = head
+    head.next = head2
+
+    for i in range(i, len(arr:1))
+        newhead = Node(arr[1])
+        previous.next = current
