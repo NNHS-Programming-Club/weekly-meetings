@@ -12,6 +12,7 @@ while tries < rounds:
     if guess == secret:
         print("The number was: " + str(secret) + ", so you win!")
         print("You took " + str(tries) + " tries.")
+        tries -= 676767
         break
 if tries >= rounds:
     print("You took too many tries, and lost :(")

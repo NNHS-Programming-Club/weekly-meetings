@@ -1,0 +1,8 @@
+git add .                             // ADDS all unstaged changes
+git commit -m "put anything here"     // Commits staged changes
+git push                              // Pushes commits to cloud
+
+git checkout your-branch              // changes the branch to your-branch
+git checkout main                     // changes the branch to main
+git config rebase.pull false          // Tells git that it should merge pulled changes
+git pull                              // Pulls everything from cloud
