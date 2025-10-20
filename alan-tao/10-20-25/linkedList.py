@@ -29,9 +29,24 @@ def deleteKthElement(head, k):
   for _ in range(k-1):
     cur = cur.next
 
-  if (cur != None and cur.next != None):
-    cur.next = cur.next.next  
+  cur.next = cur.next.next  
   return head
+
+def insertElement(head, k, v):
+  if (k == 0):
+    newHead = Node(v)
+    newHead.next = head
+    return newHead
+
+  cur = head
+  for _ in range(k-1):
+    cur = cur.next
+
+  curNext = cur.next
+  cur.next = Node(v)
+  cur.next.next = curNext
+  return head
+
 
 def reverse(head):
   prev = None
@@ -53,4 +68,10 @@ head = deleteKthElement(head, 2)
 printLinkedList(head)
 
 head = reverse(head)
+printLinkedList(head)
+
+head = insertElement(head, 3, 10)
+printLinkedList(head)
+
+head = insertElement(head, 1, -1)
 printLinkedList(head)
