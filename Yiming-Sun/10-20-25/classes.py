@@ -1,4 +1,4 @@
-class Note:
+class Node:
     value = 0
     next = None
     def __init__ (self, value):
@@ -10,4 +10,3 @@ def makeLL(arr):
 
     for i in range(1,len(arr)):
         newHead = Node(arr[i])
-        
