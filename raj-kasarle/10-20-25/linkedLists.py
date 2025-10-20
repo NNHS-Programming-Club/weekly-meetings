@@ -14,7 +14,6 @@ def makeLinkedList(arr):
 
     return head
 
-
 def printLL(head):
     cur = head
     while (cur != None):
