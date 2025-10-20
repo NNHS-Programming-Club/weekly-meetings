@@ -15,4 +15,8 @@ def makeLL(arr):
         return newHead
 
 def printLL(head):
-    cur = head 
+    cur = head
+    while (cur != None):
+        print(cur.value)
+        cur = cur.next
+
