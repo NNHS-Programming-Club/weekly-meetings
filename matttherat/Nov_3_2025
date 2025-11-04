@@ -1,0 +1,31 @@
+public class Nov_3_2025 {
+  public static void main(String[] args) {
+    
+    int n = 123456;
+    int p = 3;
+    int cp = 0;
+    
+    int digit = (n/(int) Math.pow(10, p - 1))%10;
+    int cdigit;
+    
+    int sum = 0;
+    
+    while (n != 0) {
+      cdigit = n%10;
+      n = (int) n/10;
+      if (cp == p - 1) {
+        sum += digit*Math.pow(10, cp);
+      } else if (cp < p) {
+        sum += Math.abs(cdigit - digit) * Math.pow(10, cp);
+      } else {
+        int num = cdigit + digit;
+        if (num > 9) {
+          num -= 10;
+        }
+        sum += num * Math.pow(10, cp);
+      }
+      cp++;
+    }
+    System.out.println(sum);
+  }
+}
