@@ -1,1 +1,0 @@
-print("Goonkov is snordy")

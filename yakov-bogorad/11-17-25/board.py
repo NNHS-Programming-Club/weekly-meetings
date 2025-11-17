@@ -5,6 +5,4 @@ for _ in range(a):
     for i in range(N):
         grid.append(list(map(int, input().split())))
 
-
-
-print()
+print(sorted(grid))
