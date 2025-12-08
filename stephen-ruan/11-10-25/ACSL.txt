@@ -1,0 +1,5 @@
+ACSL 1: 35233 base 8
+ACSL 2: 2340 base 6
+ACSL 3: 191 segments
+ACSL 4: 525
+5: 

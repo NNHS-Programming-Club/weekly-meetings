@@ -6,4 +6,4 @@ def func(input):
         func(input * 3 + 1)
     else:
         func(int(input / 2))
-func(7)
+func(27)
