@@ -1,0 +1,18 @@
+User types in fruit
+
+If fruit is new
+Ask user for how many fruit
+
+If fruit is already added
+Print how many fruit there are
+
+If user types "quit", exit the program
+Print all the stuff in the dictionary
+
+fruitDict = {}
+
+while True:
+    fruit = input("What is your fruit? ")
+
+    if fruit in fruitDict:
+
