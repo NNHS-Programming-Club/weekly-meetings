@@ -1,6 +1,0 @@
-ACSL
-    1) 35233 base 8
-    2) 2340 base 6
-    3) 191 total segments
-    4) 525
-    5) 
