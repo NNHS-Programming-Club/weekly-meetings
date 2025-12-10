@@ -1,28 +1,32 @@
-f = open("heona-liu/12-08-25/day1/input.txt")
-
+f = open('input.txt')
 dial = 50
-hitZero = 0
+point = 0
+rotations =0
 
-for i in f:
-    direction = i[0]
-    num = int(i[1:])
+for line in f:
+    #print(line.strip())
+    direction = line[0]
+    num = line[1:].strip()
+    rotations = int(num) // 100
+    
+    if direction == 'R':
+        dist_from_100 = abs(100-dial)
+        num = int(num) % 100 #gets remainder after all rotations
+        
+        if (num >= dist_from_100 and dial != 0):
+            point += 1 
+        dial += int(num) % 100
+        
+    if direction == 'L':
+        dist_from_0 = abs(0-dial)
+        num = int(num) % 100 #gets remainder after all rotations
+        
+        if (num >= dist_from_0 and dial != 0):
+            point += 1
+            
+        dial -= int(num) % 100
+    dial = dial % 100
+    point += rotations
 
-    if (direction == "L"): #to the left
-        dial = (dial - num) % 100
-        #print(dial)
-    elif (direction == "R"): #to the right
-        dial = (dial + num) % 100
-        #print(dial)
-
-    if (dial == 0): 
-        hitZero+=1
-
-print("Hits 0: " + str(hitZero))
-
-#part 2 -  if the mod is less than original number then it must have passed
-#take the int
-
-
-
-
+print("Zeros: " + str(point))
     
