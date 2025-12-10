@@ -1,4 +1,4 @@
-f = open('input.txt')
+f = open('heona-liu/12-08-25/day1/input.txt')
 dial = 50
 point = 0
 rotations =0
