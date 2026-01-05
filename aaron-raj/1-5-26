@@ -1,0 +1,5 @@
+import random
+print("There's 5 holes, and one mole hiding inside them")
+print("Help me pull it out.")
+print("[]  []  []  []  []")
+print("choose a hole now")
