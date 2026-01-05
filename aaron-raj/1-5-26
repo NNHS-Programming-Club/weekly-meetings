@@ -2,4 +2,21 @@ import random
 print("There's 5 holes, and one mole hiding inside them")
 print("Help me pull it out.")
 print("[]  []  []  []  []")
-print("choose a hole now")
+mole_hole= random.randint(1,5)
+hole = int(input("Pick a hole number (1-5): "))
+
+if hole == mole_hole:
+    print("You found the mole! Congratulations!")
+else:
+    print("No mole here. Try again!")
+
+for i in range(15):
+    print("Choose another hole to check:")
+    hole2 = int(input())
+    mole_hole2 = mole_hole + 1 or mole_hole - 1
+    if mole_hole2 == hole2:
+        print("You found the mole! Congratulations!")
+        break
+    else:
+        print("No mole here. Try again!")
+print("Thanks for playing!")
