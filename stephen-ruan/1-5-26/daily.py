@@ -1,8 +1,8 @@
 import math
 import random
 
-guess = [2,2,4,4,2,2,4,4,2,2,4,4,2,2,4]
-tests = 100000
+guess = [4,3,2,4,3,2]
+tests = 1000000
 caught = 0
 catches = 0
 for j in range (tests):
@@ -19,5 +19,4 @@ for j in range (tests):
     if caught == 1:
         catches += 1
     caught = 0
-print(str((catches/tests)*100)+"%")
-    
+print(str((catches/tests)*100)+ "%")
