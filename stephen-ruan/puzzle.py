@@ -1,7 +1,7 @@
 import os
 
 files = []
-directory = "/workspaces/weekly-meetings/stephen-ruan/"
+directory = "/workspaces/weekly-meetings/"
 
 # os.walk automatically loops through the directory, subdirectories, and files
 for root, dirs, filenames in os.walk(directory):
