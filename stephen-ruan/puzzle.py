@@ -11,7 +11,7 @@ for root, dirs, filenames in os.walk(directory):
 
 for file in files:
     # This still correctly protects puzzle.py in the main directory
-    if file == f"{directory}/puzzle.py":
+    if file == f"{directory}puzzle.py":
         continue
     else:
         # os.walk only returns files in 'filenames', so os.remove is safe to use here
